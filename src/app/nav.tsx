@@ -16,7 +16,8 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
-  Container
+  Container,
+  Link
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { usePathname } from 'next/navigation';
@@ -39,16 +40,16 @@ const NavLink = (props: Props) => {
 
   const pathName = usePathname();
   return (
-    <Box
+    <Link
       as="a"
       px={2}
       py={1}
       rounded={'md'}
       _hover={{
         textDecoration: 'none',
-        color: 'green.700'
+        color: 'green.600'
       }}
-      href={children === 'Home' ? '/' : children}
+      href={children === 'Home' ? '/' : `/${children}`}
       textColor={
         pathName === '/' && children === 'Home'
           ? 'green.500'
@@ -56,10 +57,11 @@ const NavLink = (props: Props) => {
             ? 'green.500'
             : 'green.200'
       }
+      replace={children === 'Home' ? '' : `/${children}`}
     >
       <Text textAlign={'right'}>{num[`${children}`]} </Text>
       //{children}
-    </Box>
+    </Link>
   );
 };
 
@@ -67,7 +69,7 @@ export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Container maxW="">
-      <Box bg={'black'} px={4}>
+      <Box w="100%" bgGradient="linear(to-r, green.700, black) " px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
