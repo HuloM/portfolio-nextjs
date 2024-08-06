@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
+
 import {
   Box,
   Heading,
@@ -44,63 +44,40 @@ export default function CallToActionWithAnnotation() {
               </Text>
             </Heading>
           </Flex>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString('Hello World!')
-                .callFunction(() => {
-                  console.log('String typed out!');
-                })
-                .start();
-            }}
-          />
-          <Text color={'gray.500'}>
-            Monetize your content by charging your most loyal readers and reward
-            them loyalty points. Give back to your loyal readers by granting
-            them access to your pre-releases and sneak-peaks.
-          </Text>
-          <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}
-          >
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500'
+          <Text as={'div'} fontSize={'30px'}>
+            <Typewriter
+              options={{
+                strings: [
+                  'From Brick Phones to Cutting-Edge Tech: My Journey in Development and Security'
+                ],
+                autoStart: true,
+                loop: false,
+                cursor: ''
               }}
-            >
-              Get Started
-            </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-              Learn more
-            </Button>
-            <Box>
-              <Icon
-                as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              />
-              <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}
-              >
-                Starting at $15/mo
-              </Text>
-            </Box>
-          </Stack>
+            />
+          </Text>
+          <Text
+            as={'div'}
+            textColor={'green.200'}
+            fontSize={'lg'}
+            textAlign={'left'}
+          >
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .changeDelay(60)
+                  .typeString(
+                    'Technology is constantly evolving, and I strive to create innovative solutions in software development. ' +
+                      'Join me in breaking new barriers and making discoveries. The future is uncertain, but I am committed to continuous ' +
+                      'learning and applying my knowledge to new challenges.'
+                  )
+                  .callFunction(() => {
+                    console.log('String typed out!');
+                  })
+                  .start();
+              }}
+            />
+          </Text>
         </Stack>
       </Container>
     </>
