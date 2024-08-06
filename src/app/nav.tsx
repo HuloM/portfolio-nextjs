@@ -17,7 +17,8 @@ import {
   useColorModeValue,
   Stack,
   Container,
-  Link
+  Link,
+  Img
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { usePathname } from 'next/navigation';
@@ -79,7 +80,7 @@ export default function NavBar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>$HuloM</Box>
+            <Img src="/Logo.jpg" alt={'Logo'} width={28} height={14} />
             <HStack
               as={'nav'}
               spacing={4}

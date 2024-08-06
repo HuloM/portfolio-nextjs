@@ -24,10 +24,28 @@ const features: { id: number; link: string; title: string; text: string }[] = [
     text: 'Wanting to know more about AWS and web apps? Come check out a paper I wrote.'!
   },
   {
-    id: 0!,
+    id: 1!,
     link: 'Projects/home-lab'!,
     title: '//Home Lab'!,
-    text: 'This is a continuous project meant to grow and develop a home server'!
+    text: 'C        ontinuous project meant to grow and develop a home server'!
+  },
+  {
+    id: 2!,
+    link: 'Projects/http-server'!,
+    title: '//HTTP Server'!,
+    text: 'Learning how we communicate with the internet to access websites'!
+  },
+  {
+    id: 3!,
+    link: 'Projects/dns-server'!,
+    title: '//DNS Server'!,
+    text: 'How are DNS requests handled, and how are DNS packets structured'!
+  },
+  {
+    id: 4!,
+    link: 'Projects/packet-sniffer'!,
+    title: '//Packet Sniffer'!,
+    text: 'Setting up a packet sniffer on a Pi for easy network sniffing deployment '!
   }
 ];
 export default function GridListWithHeading() {
@@ -45,7 +63,7 @@ export default function GridListWithHeading() {
                     'updates every month ranging from ' +
                     '<span style="color: #68D391"> software development</span>,' +
                     '<span style="color: #68D391"> Home lab attack and defense simulations</span>,' +
-                    'to<span style="color: #68D391"> open source work</span>.'
+                    ' to<span style="color: #68D391"> open source work</span>.'
                 )
                 .callFunction(() => {
                   console.log('String typed out!');
