@@ -46,7 +46,9 @@ export default async function GridListWithHeading() {
   return (
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-        <Heading fontSize={'3xl'}>Blogs</Heading>
+        <Heading fontSize={'3xl'} textColor={'white'}>
+          Blogs
+        </Heading>
         {/*<Text as={'div'} fontSize={'xl'} textColor={'green.200'}>*/}
         {/*  <Typewriter*/}
         {/*    onInit={(typewriter) => {*/}

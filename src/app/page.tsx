@@ -31,6 +31,7 @@ export default function CallToActionWithAnnotation() {
               fontSize={{ base: '4xl', sm: '2xl', md: '4xl', lg: '4xl' }}
               lineHeight={'110%'}
               textAlign={'left'}
+              textColor={'white'}
             >
               Matt Dubray
               <br />
@@ -44,7 +45,7 @@ export default function CallToActionWithAnnotation() {
               </Text>
             </Heading>
           </Flex>
-          <Text as={'div'} fontSize={'30px'}>
+          <Text as={'div'} fontSize={'30px'} textColor={'white'}>
             <Typewriter
               options={{
                 strings: [

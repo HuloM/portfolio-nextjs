@@ -67,9 +67,11 @@ const BlogAuthor = (props: BlogAuthorProps) => {
 const ArticleList = () => {
   return (
     <Container maxW={'7xl'} p="12">
-      <Heading as="h1">Network Packet Sniffer on Pi</Heading>
+      <Heading as="h1" textColor={'white'}>
+        Network Packet Sniffer on Pi
+      </Heading>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           During my CSS537 Network and Systems Security, I created a packet
           sniffer capable of intercepting all traffic on the network. The goal
           of this class was to learn network security and apply it in a final
@@ -77,7 +79,7 @@ const ArticleList = () => {
           tool that can be quickly deployed on any system and configure the
           network to pass traffic through the system to it's destination.
         </Text>
-        <Text as={'p'} fontSize="lg">
+        <Text as={'p'} fontSize="lg" textColor={'white'}>
           The packet sniffer uses python along with the ScaPY package to provide
           an easy to use packet sniffing framework. this allows us to sniff any
           traffic that passes through the system, and also allows simple

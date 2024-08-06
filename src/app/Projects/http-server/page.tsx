@@ -67,15 +67,17 @@ const BlogAuthor = (props: BlogAuthorProps) => {
 const ArticleList = () => {
   return (
     <Container maxW={'7xl'} p="12">
-      <Heading as="h1">HTTP Server</Heading>
+      <Heading as="h1" textColor={'white'}>
+        HTTP Server
+      </Heading>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           We constantly use web browsers to browse the internet visit websites,
           buy things online, etc. HTTP servers need to process a few different
           requests, such as GET, POST, PUT, and DELETE.
         </Text>
         <br />
-        <Text as={'p'} fontSize="lg">
+        <Text as={'p'} fontSize="lg" textColor={'white'}>
           In this project, I used python with the sockets and thread APIs to
           create a fully functioning HTTP server. It handles any type of HTTP
           request and is able to respond. Packets received are processed and

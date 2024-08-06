@@ -67,9 +67,11 @@ const BlogAuthor = (props: BlogAuthorProps) => {
 const ArticleList = () => {
   return (
     <Container maxW={'7xl'} p="12">
-      <Heading as="h1">AWS Web App Development Comparison</Heading>
+      <Heading as="h1" textColor={'white'}>
+        AWS Web App Development Comparison
+      </Heading>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           This capstone project for my undergrad, displays what a entry level
           developer might need to know in order to publish and maintain their
           own web app. In this project, there are different tech stacks explored
@@ -87,7 +89,7 @@ const ArticleList = () => {
           , where readers can find everything they need to know about this
           project including detailed guides on setup.
         </Text>
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           The first section of this project is to learn about what tools are
           available and what tools are popular. We explore mostly only python
           and javascript stacks within this project as they provide an easy
@@ -95,7 +97,7 @@ const ArticleList = () => {
           various cloud hosting services, CI/CD pipelines, and deployment tools
           such as docker.
         </Text>
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           We develop the 3 different stacks that are discussed and compared in
           the paper, these stacks include,{' '}
           <Text as={'span'} textColor={'green.200'}>
@@ -113,7 +115,7 @@ const ArticleList = () => {
           C# .net, provides a great barrier of entry for developing modern web
           apps.
         </Text>
-        <Text fontSize="lg">
+        <Text fontSize="lg" textColor={'white'}>
           We finally take a look at cloud providers and deciding on using AWS as
           it has plenty of options and resource for developers to quickly and
           easily deploy apps. For this project we use beanstalk to automate
@@ -121,7 +123,7 @@ const ArticleList = () => {
           our app on dockers repository that will allow for deployment of our
           application on AWS.
         </Text>
-        <Text fontSize="lg">
+        <Text fontSize="lg" textColor={'white'}>
           We finally setup a CI/CD pipeline using github's actions which will
           automate both tests and deployment. When new code is pushed to the
           repository github will run it through actions which will test it using

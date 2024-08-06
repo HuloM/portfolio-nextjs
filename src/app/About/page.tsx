@@ -43,6 +43,7 @@ export default function CallToActionWithVideo() {
                 left: 0,
                 zIndex: -1
               }}
+              textColor={'white'}
             >
               About
             </Text>

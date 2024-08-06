@@ -67,9 +67,11 @@ const BlogAuthor = (props: BlogAuthorProps) => {
 const ArticleList = () => {
   return (
     <Container maxW={'7xl'} p="12">
-      <Heading as="h1">DNS Server</Heading>
+      <Heading as="h1" textColor={'white'}>
+        DNS Server
+      </Heading>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           We constantly use web browsers to browse the internet visit websites
           using human readable URLs. However, computers don't know how to
           process these URLs inherently, so DNS was created to map URLs to IP
@@ -78,7 +80,7 @@ const ArticleList = () => {
           etc.
         </Text>
         <br />
-        <Text as={'p'} fontSize="lg">
+        <Text as={'p'} fontSize="lg" textColor={'white'}>
           In this project, I used python with the sockets and thread APIs to
           create a fully functional DNS server. it receives any type of record
           request and responds with the accompanying answer body. There is

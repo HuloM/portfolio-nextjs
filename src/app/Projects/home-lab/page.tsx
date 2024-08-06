@@ -67,9 +67,11 @@ const BlogAuthor = (props: BlogAuthorProps) => {
 const ArticleList = () => {
   return (
     <Container maxW={'7xl'} p="12">
-      <Heading as="h1">Home Lab</Heading>
+      <Heading as="h1" textColor={'white'}>
+        Home Lab
+      </Heading>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           This project will show my current and continuing journey of developing
           my own home servers. These servers act mainly for offense and defense
           simulations of vulnerable systems and other cybersecurity related
@@ -77,7 +79,7 @@ const ArticleList = () => {
           the internet and internal use such as web apps, NAS storage, and game
           servers
         </Text>
-        <Text as={'p'} fontSize="lg">
+        <Text as={'p'} fontSize="lg" textColor={'white'}>
           During my time in my masters program, we worked with plenty of
           simulations using the{' '}
           <Link
@@ -118,10 +120,10 @@ const ArticleList = () => {
           activity and setups
         </Text>
         <br />
-        <Heading as={'h1'} fontSize={'xl'}>
+        <Heading as={'h1'} fontSize={'xl'} textColor={'white'}>
           Update: Dec 1 2023
         </Heading>
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           Incorporating a new headless server, using the CasaOS to start my home
           server I was able to quickly deploy a dashboard for the home server. I
           installed a few tools such as wuzah, a separate game server, plex, and
@@ -129,25 +131,25 @@ const ArticleList = () => {
           used for periodic back ups and as a plex server storage
         </Text>
         <br />
-        <Heading as={'h1'} fontSize="xl">
+        <Heading as={'h1'} fontSize="xl" textColor={'white'}>
           Update January 4 2024
         </Heading>
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           Adding a standalone pi to service web apps through cloudflare tunnel.
         </Text>
         <br />
-        <Heading as={'h1'} fontSize="xl">
+        <Heading as={'h1'} fontSize="xl" textColor={'white'}>
           Update March 10 2024
         </Heading>
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           Converting standalone pi to a pi cluster to provide load balancing and
           more resources for other projects.
         </Text>
         <br />
-        <Heading as={'h2'} fontSize="xl">
+        <Heading as={'h2'} fontSize="xl" textColor={'white'}>
           Update: May 24 2024
         </Heading>
-        <Text as="p" fontSize="lg">
+        <Text as="p" fontSize="lg" textColor={'white'}>
           Removing CasaOS and restarting server as a proxmox server running
           ludus. Ludus is a fantastic tool that provides pre imaged VMs meant to
           simulate both attack and defense against live servers. As Ludus is

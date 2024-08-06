@@ -52,7 +52,9 @@ export default function GridListWithHeading() {
   return (
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-        <Heading fontSize={'3xl'}>Projects</Heading>
+        <Heading fontSize={'3xl'} textColor={'white'}>
+          Projects
+        </Heading>
         <Text as={'div'} color={'green.200'} fontSize={'xl'}>
           <Typewriter
             onInit={(typewriter) => {
@@ -81,7 +83,9 @@ export default function GridListWithHeading() {
               <Link href={`${feature.link}`}>
                 <Box color={'green.400'} px={2}></Box>
                 <VStack align={'start'}>
-                  <Text fontWeight={600}>{feature.title}</Text>
+                  <Text fontWeight={600} textColor={'white'}>
+                    {feature.title}
+                  </Text>
                   <Text color={'green.300'}>{feature.text}</Text>
                 </VStack>
               </Link>
